@@ -17,10 +17,12 @@ export default defineConfig({
         AntDesignVueResolver({
           importStyle: false // css in js
         })
-      ]
+      ],
+      dts: 'src/types/auto-import-AntDesignVue.d.ts' //放到src中否则作用范围有限
     }),
     AutoImport({
-      imports: ['vue', 'vue-router']
+      imports: ['vue', 'vue-router'],
+      dts: 'src/types/auto-import-vue.d.ts' //放到src中否则作用范围有限
     })
   ],
   resolve: {
