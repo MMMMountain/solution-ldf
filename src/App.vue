@@ -1,8 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+//单文件组件按 <script setup lang="ts"> 进行引入使用
+import ModeOneTsx from './components/ModeOneTsx'
+</script>
 
 <template>
-  <a-button type="primary">Primary Button</a-button>
-
+  <div>app</div>
+  <ModeOneTsx />
+  <ModeTwoTsx />
   <RouterView />
 </template>
 
@@ -69,3 +73,4 @@ nav a:first-of-type {
   }
 }
 </style>
+./components/ModeOneTsx
