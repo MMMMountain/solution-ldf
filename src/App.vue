@@ -1,6 +1,5 @@
 <script setup lang="ts">
 //单文件组件按 <script setup lang="ts"> 进行引入使用
-
 import ModeOneTsx from './components/ModeOneTsx'
 </script>
 
