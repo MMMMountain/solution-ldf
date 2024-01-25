@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'no-console': 0,
     'no-debugger': 0,
-    'no-unused-vars': 0
+    'no-unused-vars': 0,
+    'no-empty-function': [1, { allow: ['arrowFunctions'] }] // 表示空函数会err,除了箭头函数外
   }
 }

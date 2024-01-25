@@ -1,6 +1,11 @@
 <script setup lang="ts">
 //单文件组件按 <script setup lang="ts"> 进行引入使用
 import ModeOneTsx from './components/ModeOneTsx'
+
+function fun() {}
+fun()
+const fun1 = () => {}
+fun1()
 </script>
 
 <template>
