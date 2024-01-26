@@ -1,11 +1,12 @@
 <script setup lang="ts">
 //单文件组件按 <script setup lang="ts"> 进行引入使用
 import ModeOneTsx from './components/ModeOneTsx'
+import axios from 'axios'
 
-function fun() {}
-fun()
-const fun1 = () => {}
-fun1()
+axios.get('/ldf').then((res) => {
+  console.log(res)
+  console.log(res.data)
+})
 </script>
 
 <template>
